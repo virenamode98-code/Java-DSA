@@ -231,3 +231,40 @@ int number = scanner.nextInt();
 double decimal = scanner.nextDouble();
 
 scanner.close();
+
+
+---
+
+# Lesson 4 — Operators and Expressions
+
+Operators are symbols used to perform operations on values and variables.
+
+---
+
+## 1. Arithmetic Operators
+
+Arithmetic operators perform mathematical calculations.
+
+| Operator | Meaning | Example |
+|---|---|---|
+| `+` | Addition | `a + b` |
+| `-` | Subtraction | `a - b` |
+| `*` | Multiplication | `a * b` |
+| `/` | Division | `a / b` |
+| `%` | Remainder | `a % b` |
+
+Example:
+
+```java
+int a = 10;
+int b = 3;
+
+System.out.println(a + b); // 13
+System.out.println(a - b); // 7
+System.out.println(a * b); // 30
+System.out.println(a / b); // 3
+System.out.println(a % b); // 1
+
+
+
+
