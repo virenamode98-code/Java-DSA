@@ -142,3 +142,92 @@ double cgpa = 8.5;
 char grade = 'A';
 boolean learningDSA = true;
 String name = "Virendra";
+
+
+# Java Program Structure
+
+public class ClassName {
+
+    public static void main(String[] args) {
+
+        // Program execution starts here
+
+    }
+}
+
+
+# public -
+public is an access modifier.
+
+It means:
+
+This thing can be accessed from anywhere where it is allowed.
+
+# static --
+static means the member belongs to the class itself rather than to a particular object.
+
+# void -- 
+
+void means this method does not return a value .
+
+means this method performing an action but returns nothing.
+
+# main -- 
+
+this is special method where java execution begins  
+
+# string[] args 
+
+string[] args allows java programs to receive arguments from the command line.
+
+
+basic flow of program -- 
+
+public
+↓
+Accessible to JVM
+
+static
+↓
+Can run without creating an object
+
+void
+↓
+Returns nothing
+
+main
+↓
+Starting point of program
+
+String[] args
+↓
+Receives command-line arguments
+
+
+
+
+conceptually :
+
+JVM
+ │
+ └── calls
+      ↓
+ public static void main(String[] args)
+      ↓
+ program execution begins
+
+
+
+ ## Scanner Input
+
+Scanner is used to take input from the user.
+
+import java.util.Scanner;
+
+Scanner scanner = new Scanner(System.in);
+
+String text = scanner.nextLine();
+int number = scanner.nextInt();
+double decimal = scanner.nextDouble();
+
+scanner.close();
