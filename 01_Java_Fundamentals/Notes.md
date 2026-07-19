@@ -69,3 +69,76 @@ JDK = JRE + Development Tools
 
 Example:
 javac = Java Compiler
+
+
+# Lesson 02 — Variables and Data Types
+
+## What is a variable?
+
+A variable is a named memory location used to store data.
+
+Example:
+
+int age = 21;
+
+Here:
+
+- int → data type
+- age → variable name
+- 21 → value
+- = → assignment operator
+
+## Primitive Data Types
+
+Java has 8 primitive data types:
+
+| Type | Example |
+|---|---|
+| byte | byte age = 21; |
+| short | short year = 2026; |
+| int | int marks = 85; |
+| long | long population = 1000000L; |
+| float | float price = 10.5f; |
+| double | double pi = 3.14159; |
+| char | char grade = 'A'; |
+| boolean | boolean isJavaFun = true; |
+
+## Most commonly used in DSA
+
+int
+long
+double
+char
+boolean
+
+
+## Lesson 2: Variables and Data Types
+
+### Variable
+
+A variable is a named location used to store a value.
+
+Example:
+
+int age = 21;
+
+- int = data type
+- age = variable name
+- = = assignment operator
+- 21 = value
+
+### Common Data Types
+
+int     → whole numbers
+double  → decimal numbers
+char    → single character
+boolean → true or false
+String  → text
+
+### Example
+
+int age = 21;
+double cgpa = 8.5;
+char grade = 'A';
+boolean learningDSA = true;
+String name = "Virendra";
