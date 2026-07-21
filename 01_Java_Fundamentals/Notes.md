@@ -869,3 +869,245 @@ Java operators can be grouped into:
 !
 
 ^
+
+
+# Lesson 5: Conditional Statements
+
+Conditional statements allow a program to make decisions based on conditions.
+
+Basic logic:
+
+IF condition is true
+    execute some code
+ELSE
+    execute another code
+
+---
+
+## 1. if Statement
+
+The `if` statement executes code only when a condition is true.
+
+### Syntax
+
+```java
+if (condition) {
+    // code
+}
+
+example
+
+int age = 20;
+
+if (age >= 18) {
+    System.out.println("You are eligible to vote.");
+}
+
+output 
+
+You are eligible to vote.
+
+
+2. if-else Statement
+The if-else statement is used when there are two possible outcomes.
+
+
+syntax 
+
+if (condition) {
+    // if condition is true
+} else {
+    // if condition is false
+}
+
+example 
+
+int age = 16;
+
+if (age >= 18) {
+    System.out.println("Eligible to vote");
+} else {
+    System.out.println("Not eligible to vote");
+}
+
+
+3. if-else-if Ladder 
+Used when there are multiple conditions.
+
+
+example 
+
+int marks = 85;
+
+if (marks >= 90) {
+    System.out.println("Grade A");
+} else if (marks >= 80) {
+    System.out.println("Grade B");
+} else if (marks >= 70) {
+    System.out.println("Grade C");
+} else {
+    System.out.println("Fail");
+}
+
+
+Java checks the conditions from top to bottom.
+
+As soon as one condition becomes true, its block executes and the remaining conditions are skipped.
+
+
+4. Nested if
+
+An if statement inside another if statement is called nested if.
+
+
+example 
+
+int age = 20;
+boolean hasID = true;
+
+if (age >= 18) {
+
+    if (hasID) {
+        System.out.println("Entry allowed");
+    }
+
+}
+Nested conditions should be used carefully because too many nested conditions can make code difficult to read.
+
+
+5. switch Statement
+
+The switch statement is useful when we need to compare one value against multiple fixed cases.
+
+
+switch (value) {
+
+    case value1:
+        // code
+        break;
+
+    case value2:
+        // code
+        break;
+
+    default:
+        // code
+}
+
+
+
+example 
+
+
+int day = 2;
+
+switch (day) {
+
+    case 1:
+        System.out.println("Monday");
+        break;
+
+    case 2:
+        System.out.println("Tuesday");
+        break;
+
+    case 3:
+        System.out.println("Wednesday");
+        break;
+
+    default:
+        System.out.println("Invalid day");
+}
+
+
+
+output
+
+Tuesday
+
+
+
+Why is break Important?
+
+break stops the execution of the switch statement.
+
+int number = 1;
+
+switch (number) {
+
+    case 1:
+        System.out.println("One");
+        break;
+
+    case 2:
+        System.out.println("Two");
+        break;
+}
+
+Without break, Java may continue executing the next cases.
+his behavior is called:
+
+Fall-through
+
+default
+
+The default block executes when no case matches.
+
+
+int day = 10;
+
+switch (day) {
+
+    case 1:
+        System.out.println("Monday");
+        break;
+
+    default:
+        System.out.println("Invalid day");
+}
+
+
+output 
+
+Invalid day
+
+6. Ternary Operator
+
+The ternary operator is a short form of if-else.
+
+syntax 
+
+condition ? valueIfTrue : valueIfFalse;
+
+
+example 
+
+    int age = 20;
+
+String result = age >= 18 ? "Adult" : "Minor";
+
+System.out.println(result);
+
+output 
+
+Adult
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
