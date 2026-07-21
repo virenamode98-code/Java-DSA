@@ -886,7 +886,7 @@ ELSE
 
  if Statement
 
-The `if` statement executes code only when a condition is true.
+The statement executes code only when a condition is true.
 
 
 
@@ -1092,6 +1092,26 @@ output
 
 Adult
 
+
+
+
+Lesson 5 Summary
+
+In this lesson, we learned:
+
+if
+if-else
+if-else-if
+Nested if
+switch
+case
+break
+default
+Ternary operator
+Decision-making logic
+Difference between = and ==
+String comparison using .equals()
+How conditional statements are used in DSA
 
 
 
