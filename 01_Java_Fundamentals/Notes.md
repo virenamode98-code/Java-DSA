@@ -884,11 +884,11 @@ ELSE
 
 ---
 
-## 1. if Statement
+ if Statement
 
 The `if` statement executes code only when a condition is true.
 
-### Syntax
+
 
 ```java
 if (condition) {
