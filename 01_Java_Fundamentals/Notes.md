@@ -1116,6 +1116,442 @@ How conditional statements are used in DSA
 
 
 
+Lesson 6: Loops
+
+Loops are used to repeatedly execute a block of code.
+
+Instead of writing:
+
+System.out.println(1);
+System.out.println(2);
+System.out.println(3);
+System.out.println(4);
+System.out.println(5);
+
+We can use a loop:
+
+for (int i = 1; i <= 5; i++) {
+    System.out.println(i);
+}
+Types of Loops in Java
+
+Java mainly provides:
+
+for loop
+while loop
+do-while loop
+1. for Loop
+
+A for loop is useful when we know how many times we want to repeat something.
+
+Syntax:
+
+for (initialization; condition; update) {
+
+    // code
+
+}
+
+Example:
+
+for (int i = 1; i <= 5; i++) {
+
+    System.out.println(i);
+
+}
+How for Loop Works
+for (int i = 1; i <= 5; i++)
+Step 1: Initialization
+int i = 1;
+
+Runs only once.
+
+Step 2: Condition
+i <= 5
+
+If true, the loop body executes.
+
+Step 3: Body
+System.out.println(i);
+Step 4: Update
+i++
+
+The value of i increases by 1.
+
+Complete Flow
+Initialization
+      ↓
+Condition
+      ↓
+   true?
+   /   \
+ yes    no
+  ↓      ↓
+Body    Stop
+  ↓
+Update
+  ↓
+Condition again
+2. while Loop
+
+A while loop executes while a condition is true.
+
+Syntax:
+
+while (condition) {
+
+    // code
+
+}
+
+Example:
+
+int i = 1;
+
+while (i <= 5) {
+
+    System.out.println(i);
+
+    i++;
+}
+Important
+
+Always make sure that the loop condition eventually becomes false.
+
+Otherwise, the loop becomes an infinite loop.
+
+Example:
+
+int i = 1;
+
+while (i <= 5) {
+
+    System.out.println(i);
+
+    i++;
+}
+
+Here i++ is important because it eventually makes:
+
+i > 5
+3. do-while Loop
+
+A do-while loop executes the code at least once.
+
+Syntax:
+
+do {
+
+    // code
+
+} while (condition);
+
+Example:
+
+int i = 1;
+
+do {
+
+    System.out.println(i);
+
+    i++;
+
+} while (i <= 5);
+Difference Between while and do-while
+while
+
+Condition is checked first.
+
+Condition
+    ↓
+If true → Execute
+do-while
+
+Code executes first.
+
+Execute
+    ↓
+Check condition
+
+Therefore, do-while executes at least once.
+
+Loop Control Statements
+break
+
+break immediately stops the loop.
+
+Example:
+
+for (int i = 1; i <= 10; i++) {
+
+    if (i == 5) {
+        break;
+    }
+
+    System.out.println(i);
+}
+
+Output:
+
+1
+2
+3
+4
+continue
+
+continue skips the current iteration and moves to the next iteration.
+
+Example:
+
+for (int i = 1; i <= 5; i++) {
+
+    if (i == 3) {
+        continue;
+    }
+
+    System.out.println(i);
+}
+
+Output:
+
+1
+2
+4
+5
+Nested Loops
+
+A loop inside another loop is called a nested loop.
+
+Example:
+
+for (int row = 1; row <= 3; row++) {
+
+    for (int column = 1; column <= 3; column++) {
+
+        System.out.print("* ");
+
+    }
+
+    System.out.println();
+}
+
+Output:
+
+* * *
+* * *
+* * *
+Important Number Logic
+Sum from 1 to N
+int sum = 0;
+
+for (int i = 1; i <= n; i++) {
+
+    sum = sum + i;
+
+}
+Factorial
+long factorial = 1;
+
+for (int i = 1; i <= n; i++) {
+
+    factorial = factorial * i;
+
+}
+
+Example:
+
+5! = 5 × 4 × 3 × 2 × 1 = 120
+Count Digits
+int count = 0;
+
+while (number != 0) {
+
+    number = number / 10;
+
+    count++;
+
+}
+Reverse a Number
+int reverse = 0;
+
+while (number != 0) {
+
+    int digit = number % 10;
+
+    reverse = reverse * 10 + digit;
+
+    number = number / 10;
+
+}
+
+Example:
+
+Input: 1234
+Output: 4321
+Palindrome Number
+
+A number is a palindrome if it remains the same when reversed.
+
+Example:
+
+121 → Palindrome
+123 → Not Palindrome
+
+Logic:
+
+int original = number;
+int reverse = 0;
+
+while (number != 0) {
+
+    int digit = number % 10;
+
+    reverse = reverse * 10 + digit;
+
+    number = number / 10;
+
+}
+
+if (original == reverse) {
+
+    System.out.println("Palindrome");
+
+}
+Prime Number
+
+A prime number has exactly two factors:
+
+1
+itself
+
+Examples:
+
+2, 3, 5, 7, 11
+
+Basic logic:
+
+boolean isPrime = true;
+
+if (number <= 1) {
+
+    isPrime = false;
+
+} else {
+
+    for (int i = 2; i < number; i++) {
+
+        if (number % i == 0) {
+
+            isPrime = false;
+            break;
+
+        }
+
+    }
+
+}
+Pattern Printing
+
+Pattern printing is important for learning nested loops.
+
+Example:
+
+for (int row = 1; row <= 5; row++) {
+
+    for (int column = 1; column <= row; column++) {
+
+        System.out.print("* ");
+
+    }
+
+    System.out.println();
+
+}
+
+Output:
+
+*
+* *
+* * *
+* * * *
+* * * * *
+Important DSA Thinking
+
+When solving a loop problem, always ask:
+
+What is the starting value?
+What is the stopping condition?
+How does the variable change?
+What happens in each iteration?
+Will the loop eventually stop?
+
+Example:
+
+for (int i = 1; i <= n; i++) {
+    System.out.println(i);
+}
+
+Think:
+
+Start: 1
+Condition: i <= n
+Work: print i
+Update: i++
+Stop: when i > n
+Lesson 6 Summary
+
+After this lesson, you should understand:
+
+for loop
+while loop
+do-while loop
+break
+continue
+nested loops
+sum calculation
+factorial
+counting digits
+reversing numbers
+palindrome logic
+prime number logic
+basic pattern printing
+
+Loops are one of the most important foundations of DSA.
+
+Almost every major DSA topic will use loops:
+
+Arrays
+    ↓
+Strings
+    ↓
+Searching
+    ↓
+Sorting
+    ↓
+Linked Lists
+    ↓
+Trees
+    ↓
+Graphs
+    ↓
+Dynamic Programming
+Practice Rule
+
+For every problem:
+
+First understand the logic.
+Write the algorithm in simple words.
+Write the code.
+Compile the code.
+Run the code.
+Test with multiple inputs.
+Explain the code without looking at it.
+Commit the changes to Git.
+
+
+
+
+
 
 
 
